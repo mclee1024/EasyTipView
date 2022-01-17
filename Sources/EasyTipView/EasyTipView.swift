@@ -174,7 +174,7 @@ public extension EasyTipView {
         }
         
         if animated {
-            UIView.animate(withDuration: preferences.animating.showDuration, delay: 0, usingSpringWithDamping: damping, initialSpringVelocity: velocity, options: [.curveEaseInOut], animations: animations, completion: nil)
+            UIView.animate(withDuration: preferences.animating.showDuration, delay: 0, usingSpringWithDamping: damping, initialSpringVelocity: velocity, options: [.curveEaseInOut, .allowUserInteraction], animations: animations, completion: nil)
         }else{
             animations()
         }
